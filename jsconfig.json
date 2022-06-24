@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "module": "ES2022",
+    "target": "ES2022",
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "@containers/*": ["containers/*"],
+      "@components/*": ["components/*"],
+      "@routes/*": ["routes/*"],
+      "@pages/*": ["pages/*"],
+      "@hooks/*": ["hooks/*"],
+      "@styles/*": ["styles/*"],
+      "@context/*": ["context/*"],
+      "@icons/*": ["assets/icons/*"],
+      "@logos/*": ["assets/logos/*"]
+    }
+  },
+  "exclude": ["dist", "node_modules", ".vscode"]
+}
