@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
-    "module": "ES2022",
-    "target": "ES2022",
+    "module": "ESNext",
+    "target": "ESNext",
     "jsx": "react",
-    "baseUrl": ".",
+    "baseUrl": "./",
     "paths": {
       "@containers/*": ["containers/*"],
       "@components/*": ["components/*"],
@@ -14,7 +14,9 @@
       "@context/*": ["context/*"],
       "@icons/*": ["assets/icons/*"],
       "@logos/*": ["assets/logos/*"]
-    }
+    },
+    "moduleResolution": "node",
+    "resolveJsonModule": true
   },
-  "exclude": ["dist", "node_modules", ".vscode"]
+  "exclude": ["node_modules", ".next"]
 }

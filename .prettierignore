@@ -1,6 +1,5 @@
 .next
 .vscode
 .idea
-generared
 node_modules
-out
+.husky

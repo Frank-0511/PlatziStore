@@ -1,11 +1,12 @@
 import OrderItem from "@components/OrderItem"
 import AppContext from "@context/AppContext"
 import iconArrow from "@icons/flechita.svg"
-import "@styles/MyOrder.scss"
-import React, { useContext } from "react"
+import styles from "@styles/MyOrder.module.scss"
+import Image from "next/image"
+import {useContext} from "react"
 
 const MyOrder = () => {
-  const { state } = useContext(AppContext)
+  const {state} = useContext(AppContext)
 
   const sumTotal = () => {
     const reducer = (accumulator, currentValue) =>
@@ -14,22 +15,22 @@ const MyOrder = () => {
   }
 
   return (
-    <aside className="MyOrder">
-      <div className="title-container">
-        <img src={iconArrow} alt="arrow" />
-        <p className="title">My order</p>
+    <aside className={styles.my_order}>
+      <div className={styles.my_order__title_container}>
+        <Image src={iconArrow} alt="arrow"/>
+        <p className={styles.title}>My order</p>
       </div>
-      <div className="my-order-content">
+      <div className={styles.my_order__content}>
         {state.cart.map((product) => (
-          <OrderItem key={`orderItem-${product.id}`} product={product} />
+          <OrderItem key={`orderItem-${product.id}`} product={product}/>
         ))}
-        <div className="order">
+        <div className={styles.order}>
           <p>
             <span>Total</span>
           </p>
           <p>${sumTotal()}</p>
         </div>
-        <button className="primary-button">Checkout</button>
+        <button className={styles.primary_button}>Checkout</button>
       </div>
     </aside>
   )

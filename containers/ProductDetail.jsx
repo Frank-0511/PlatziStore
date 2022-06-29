@@ -1,5 +1,6 @@
-import ProductInfo from "@components/ProductInfo"
 import "../styles/ProductDetail.scss"
+
+import ProductInfo from "@components/ProductInfo"
 import iconClose from "@icons/icon_close.png"
 
 const ProductDetail = () => {

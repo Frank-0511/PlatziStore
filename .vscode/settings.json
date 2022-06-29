@@ -13,8 +13,17 @@
     ".git": true,
     ".vscode": true,
     "LICENSE": true,
-    "README.md": true
+    "README.md": true,
+    ".husky": true,
+    ".prettierignore": true,
+    ".prettierrc.json": true,
+    ".eslintignore": true,
+    ".eslintrc.json": true,
+    "yarn.lock": true
   },
   "explorerExclude.backup": null,
-  "cSpell.words": ["ecma"]
+  "cSpell.words": [
+    "ecma",
+    "flechita"
+  ]
 }

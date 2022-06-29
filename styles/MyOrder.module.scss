@@ -1,6 +1,6 @@
 @import "vars";
 
-.MyOrder {
+.my_order {
   width: 360px;
   padding: 24px;
   box-sizing: border-box;
@@ -10,25 +10,26 @@
   top: 60px;
   bottom: 0;
   border-radius: 6px;
-  border: 1px solid var(--very-light-pink);
+  border: 1px solid $color-very-light-pink;
 }
-.title-container {
+.my_order__title_container {
   display: flex;
 }
-.title-container img {
+.my_order__title_container img {
   transform: rotate(180deg);
   margin-right: 14px;
 }
 .title {
-  font-size: var(--lg);
+  font-size: $--lg;
   font-weight: bold;
+  margin-left: 8px;
 }
 .order {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 16px;
   align-items: center;
-  background-color: var(--text-input-field);
+  background-color: $color-text-input-field;
   margin-bottom: 24px;
   border-radius: 8px;
   padding: 0 24px;
@@ -38,7 +39,7 @@
   flex-direction: column;
 }
 .order p span:nth-child(1) {
-  font-size: var(--md);
+  font-size: $--md;
   font-weight: bold;
 }
 .order p:nth-child(2) {
@@ -46,19 +47,19 @@
   font-weight: bold;
 }
 
-.primary-button {
-  background-color: var(--hospital-green);
+.primary_button {
+  background-color: $color-hospital-green;
   border-radius: 8px;
   border: none;
-  color: var(--white);
+  color: $color-white;
   width: 100%;
   cursor: pointer;
-  font-size: var(--md);
+  font-size: $--md;
   font-weight: bold;
   height: 50px;
 }
 @media (max-width: 640px) {
-  .MyOrder {
+  .my_order {
     width: 100%;
   }
 }

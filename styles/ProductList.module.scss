@@ -1,6 +1,6 @@
 @import "vars";
 
-.ProductList {
+.product_list {
   display: grid;
   grid-template-columns: repeat(auto-fill, 240px);
   gap: 26px;
@@ -9,7 +9,7 @@
 }
 
 @media (max-width: 640px) {
-  .ProductList {
+  .product_list {
     grid-template-columns: repeat(auto-fill, 140px);
   }
 }
