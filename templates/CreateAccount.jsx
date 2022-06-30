@@ -14,7 +14,7 @@ const CreateAccount = () => {
             <input
               type="text"
               id="name"
-              placeholder="Teff"
+              placeholder="Tef"
               className="input input-name"
             />
             <label htmlFor="email" className="label">

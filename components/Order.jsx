@@ -1,4 +1,5 @@
 import iconFlechita from "@icons/flechita.svg"
+import Image from "next/image"
 
 const Order = () => {
   return (
@@ -8,7 +9,7 @@ const Order = () => {
         <span>6 articles</span>
       </p>
       <p>$560.00</p>
-      <img src={iconFlechita} alt="arrow" />
+      <Image src={iconFlechita} alt="arrow"/>
     </div>
   )
 }

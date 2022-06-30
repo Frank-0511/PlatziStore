@@ -11,7 +11,7 @@ const MyAccount = () => {
             <label htmlFor="name" className="label">
               Name
             </label>
-            <p className="value">Camila Yokoo</p>
+            <p className="value">Camila Yoko</p>
             <label htmlFor="email" className="label">
               Email
             </label>
