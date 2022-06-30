@@ -4,3 +4,4 @@ generated
 .husky
 .vscode
 .eslintcache
+public/*.js
